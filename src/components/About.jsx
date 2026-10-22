@@ -2,36 +2,69 @@ import React, { useState } from 'react';
 
 const experience = [
   {
-    role: 'CEO and Founder',
-    org: 'Onbora',
-    location: 'Kenya',
-    period: 'August 2025 – Present',
-    description:
-      'Onbora is a startup that provides a simple, all-in-one platform to help solopreneurs and small teams in Africa onboard clients, manage tasks, and collaborate efficiently — without the complexity or cost of enterprise tools.',
+    role: 'Founder & Principal Software Architect',
+    org: 'Exagon SD',
+    location: 'Nairobi, Kenya',
+    period: 'Current',
+    highlights: [
+      'Founded and lead a software and digital-product venture focused on building practical platforms for business and operational needs.',
+      'Lead product definition, technical architecture and hands-on application development, translating workflow requirements into usable software.',
+      'Apply an end-to-end approach across discovery, interface design, implementation, integration, testing, iteration and deployment.',
+      'Develop platforms across business process management, operational workflows and sector-specific systems.',
+    ],
   },
   {
-    role: 'Co-Founder and CTO',
+    role: 'Co-Founder & CTO',
     org: 'Uwazi',
-    location: 'Kenya',
-    period: 'January 2026 – Present',
-    description:
-      'Building Uwazi, a social enterprise platform that empowers citizens to safely and anonymously report corruption, increasing transparency and accountability in Kenya. Implemented end-to-end encryption, no collection of personal identifiers, and anonymous submission IDs instead of accounts. Stack: React + Vite, Node.js + Express, MongoDB/PostgreSQL, libsodium / Web Crypto API.',
+    location: 'Nairobi, Kenya',
+    period: 'Feb 2026 – Present',
+    highlights: [
+      'Lead frontend architecture and technical decisions for a civic-tech platform focused on decentralised corruption reporting.',
+      'Implement application state management and REST API integrations to support maintainable frontend workflows.',
+      'Contribute to performance optimisation and the delivery of a user-facing digital platform.',
+    ],
   },
   {
-    role: 'Fullstack Developer',
-    org: 'Business Web Solutions',
-    location: 'India',
-    period: 'April 2025 – Present',
-    description:
-      'Applying various stacks and technologies to develop and implement web solutions for businesses across the world.',
+    role: 'Founder & Product / Software Lead',
+    org: 'Onbora',
+    location: 'Nairobi, Kenya',
+    period: 'Feb 2025 – Present',
+    highlights: [
+      'Founded and led development of a B2B client-onboarding and workflow-management platform for SMEs.',
+      'Owned product strategy and delivery across requirements, user research, MVP development, testing, iteration and market validation.',
+      'Integrated CRM, payment and analytics tools, and designed automation workflows to streamline customer follow-up and operational processes.',
+    ],
   },
   {
-    role: 'Frontend Developer',
-    org: 'Freelance — Upwork, Fiverr, Freelancer',
+    role: 'Technical Support Assistant',
+    org: 'ASG',
+    location: 'Remote, South Africa',
+    period: 'Jan 2025 – Dec 2025',
+    highlights: [
+      'Designed support workflows and ticket-routing processes, including automation macros intended to reduce customer wait times.',
+      'Configured customer-service software, integrated third-party APIs and maintained internal documentation and help-centre resources.',
+    ],
+  },
+  {
+    role: 'JavaScript / React Developer Intern',
+    org: 'Synechron',
     location: 'Remote',
-    period: 'February 2022 – Present',
-    description:
-      'Helping clients online with their business needs, collaborating with UI/UX designers and backend developers to develop high-quality, user-friendly web solutions.',
+    period: 'Feb 2024 – Oct 2024',
+    highlights: [
+      'Contributed to responsive web applications and internal dashboards, collaborating with designers and backend developers.',
+      'Integrated third-party APIs, supported frontend testing and debugging, and participated in Agile sprints.',
+      'Developed internal dashboards reported to reduce reporting time by 40%.',
+    ],
+  },
+  {
+    role: 'Product Designer',
+    org: 'Invonics Technologies',
+    location: 'Nairobi, Kenya',
+    period: 'Jun 2021 – Nov 2023',
+    highlights: [
+      'Created wireframes, UI systems and responsive layouts using Figma, working with researchers to understand user behaviour.',
+      'Supported usability testing, product validation and iterative improvements based on user feedback and analytics.',
+    ],
   },
 ];
 
@@ -108,7 +141,14 @@ function About() {
                     {job.org} <span className="text-slate-400">· {job.location}</span>
                   </p>
                   <p className="text-slate-500 text-xs italic mb-2">{job.period}</p>
-                  <p className="text-slate-300 text-sm sm:text-base text-justify leading-relaxed">{job.description}</p>
+                  <ul className="space-y-2 text-slate-300 text-sm sm:text-base leading-relaxed">
+                    {job.highlights.map((item) => (
+                      <li key={item} className="flex items-start gap-2">
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent shrink-0" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               ))}
             </div>
