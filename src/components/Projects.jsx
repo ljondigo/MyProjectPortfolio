@@ -16,6 +16,13 @@ const projects = [
     tags: ['React', 'Next.js', 'Web App'],
   },
   {
+    title: 'PharmPOS — Pharmacy POS',
+    description: 'A point-of-sale system for pharmacies in Kenya, covering dispensing, batch and expiry control, prescription review, M-Pesa payments and shift reconciliation.',
+    image: '/images/pharm-pos.png',
+    href: 'https://pharm-pos-ashy.vercel.app/login',
+    tags: ['React', 'Vite', 'POS System'],
+  },
+  {
     title: 'Travel Planner App',
     description: 'A full-stack app for planning trips, organizing itineraries, and tracking travel budgets.',
     image: '/images/travel-planner-design.JPG',
