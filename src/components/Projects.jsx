@@ -2,6 +2,13 @@ import React from 'react';
 
 const projects = [
   {
+    title: 'Exagon SD',
+    description: 'A software development studio that designs and engineers custom web platforms, mobile apps, CRM, ERP and POS systems built around how organisations actually work.',
+    image: '/images/exagon.png',
+    href: 'https://exagon.co.ke/',
+    tags: ['React', 'Next.js', 'Company Site'],
+  },
+  {
     title: 'Onbora',
     description: 'A SaaS platform for small businesses to manage their operations, including invoicing, scheduling, and customer management.',
     image: '/images/onbora.png',
