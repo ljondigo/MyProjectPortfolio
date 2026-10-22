@@ -68,16 +68,15 @@ function About() {
         <div className="w-full text-center lg:text-left">
           <p className="text-accent font-semibold tracking-widest text-xs uppercase mb-2">Get to know me</p>
           <h2 className="text-white text-3xl md:text-4xl font-bold mb-3">About Me</h2>
-          <h3 className="text-accent text-xl md:text-2xl font-bold mb-4">Technical Support Specialist and Software Engineer</h3>
+          <h3 className="text-accent text-xl md:text-2xl font-bold mb-4">Full Stack Software Developer (MERN)</h3>
           <p className="text-slate-300 leading-relaxed text-sm sm:text-base text-justify">
-            Technical Operation Specialist with a strong background in software development and startup building.
-            Experienced in automating workflows and improving operational efficiency, implementing AI-powered systems, optimizing CRMs, and
-            building lean operational infrastructure for early-stage teams. Skilled in leveraging technology to drive growth, streamline processes
-            and translating technical solutions into measurable business efficiency.
-            Highly skilled Front End Developer with five years of experience in creating visually appealing
-            and user-friendly websites. Proficient in HTML, CSS, and JavaScript, with a strong understanding
-            of modern web development technologies and frameworks. Committed to delivering high-quality code
-            and exceptional user experiences.
+            Results-driven Full Stack Software Developer specialising in the MERN stack (MongoDB, Express.js, React, Node.js)
+            with 3+ years of experience designing, building and deploying responsive, scalable web applications and SaaS products.
+            Founder of Onbora and Co-Founder &amp; CTO of Uwazi, with end-to-end ownership of system architecture, RESTful API
+            development, state management, CI/CD and cloud deployment. A background in product design and workflow automation
+            adds a user-centred, business-aware approach to engineering, with a proven record of eliminating manual processes
+            and cutting reporting time by 40% through clean code, API integration and automation. Seeking a Full Stack, MERN or
+            Software Engineer role in a high-impact engineering team.
           </p>
 
           <button
